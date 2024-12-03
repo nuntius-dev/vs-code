@@ -9,7 +9,7 @@ apt-get update && apt-get install -y ./vs_code.deb && rm vs_code.deb
 # Configure desktop icon
 ICON_PATH="/usr/share/icons/hicolor/apps/vscode.svg"
 DESKTOP_FILE="/usr/share/applications/code.desktop"
-wget -qO $ICON_PATH https://kasm-static-content.s3.amazonaws.com/icons/vscode.svg
+wget -qO $ICON_PATH https://raw.githubusercontent.com/nuntius-dev/vs-code/refs/heads/main/vscode.svg
 sed -i -e "s#Icon=.*#Icon=$ICON_PATH#" \
        -e "s#/usr/share/code/code#/usr/share/code/code --no-sandbox#" $DESKTOP_FILE
 cp $DESKTOP_FILE $HOME/Desktop && chmod +x $HOME/Desktop/code.desktop
