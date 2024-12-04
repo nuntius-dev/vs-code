@@ -24,12 +24,12 @@ This repository provides a Bash script to automate the installation and configur
 
 2. Make the script executable:
    ```bash
-   chmod +x install.sh
+   chmod +x install_vs_code.sh
    ```
 
 3. Run the script:
    ```bash
-   sudo ./install.sh
+   sudo ./install_vs_code.sh
    ```
 
 ## Script Details
