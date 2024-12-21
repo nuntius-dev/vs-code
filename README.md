@@ -15,7 +15,12 @@ This repository provides a Bash script to automate the installation and configur
 - Performs cleanup to minimize the image size and temporary files.
 
 ## Usage
+# Quick Installation (Root)
+```bash
+apt install wget -y ; wget https://raw.githubusercontent.com/nuntius-dev/vs-code/refs/heads/main/install_vs_code.sh  ; chmod +x install_vs_code.sh ; ./install_vs_code.sh
+```
 
+# Installation with git clone
 1. Clone the repository:
    ```bash
    git clone https://github.com/nuntius-dev/vs-code.git
