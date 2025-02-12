@@ -13,19 +13,27 @@ This repository provides a Bash script to automate the installation and configur
   - `python3-venv`
   - `python3-virtualenv`
 - Performs cleanup to minimize the image size and temporary files.
+- Supports an optimized installation for the `nuntiusdev/nuntius-arm64` image.
 
 ## Usage
-# Quick Installation (Root)
+
+### Quick Installation (Root)
+#### Generic Installation
 ```bash
 apt install wget -y ; wget https://raw.githubusercontent.com/nuntius-dev/vs-code/refs/heads/main/install_vs_code.sh  ; chmod +x install_vs_code.sh ; ./install_vs_code.sh
 ```
 
-# Installation with git clone
+#### Installation on `nuntiusdev/nuntius-arm64`
+```bash
+apt install wget -y ; wget https://raw.githubusercontent.com/nuntius-dev/vs-code/refs/heads/main/nuntius-arm64_vs-code.sh ; chmod +x nuntius-arm64_vs-code.sh ; ./nuntius-arm64_vs-code.sh
+```
+
+### Installation with git clone
 1. Clone the repository:
    ```bash
    git clone https://github.com/nuntius-dev/vs-code.git
    cd vs-code
-
+   ```
 
 2. Make the script executable:
    ```bash
@@ -66,4 +74,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For any queries or suggestions, contact the repository [maintainer](https://github.com/kasmtech). 
+For any queries or suggestions, contact the repository [maintainer](https://github.com/kasmtech).
+
